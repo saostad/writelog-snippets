@@ -1,0 +1,30 @@
+{
+  "writeLog to console with level info": {
+    "prefix": "wic",
+    "body": ["writeLog(`$1`, { stdout: true, level: 'info'})", "$2"]
+  },
+  "writeLog to console with level error": {
+    "prefix": "wec",
+    "body": ["writeLog(`$1`, { stdout: true, level: 'error'})", "$2"]
+  },
+  "writeLog with level info": {
+    "prefix": "wi",
+    "body": ["writeLog(`$1`, { level: 'info'})", "$2"]
+  },
+  "writeLog with level error": {
+    "prefix": "we",
+    "body": ["writeLog(`$1`, { level: 'error'})", "$2"]
+  },
+  "writeLog with level debug": {
+    "prefix": "wd",
+    "body": ["writeLog(`$1`, { level: 'debug'})", "$2"]
+  },
+  "writeLog with level trace": {
+    "prefix": "wt",
+    "body": ["writeLog([`$1`, $2], { level: 'trace'})", "$3"]
+  },
+  "writeLog with level debug for functions": {
+    "prefix": "wdf",
+    "body": ["writeLog(`$CLIPBOARD()`, { level: 'debug'})", "$1"]
+  }
+}
